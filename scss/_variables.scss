@@ -1,0 +1,39 @@
+// colores 
+$aqua:#12d0d0;
+$subtitulo:#90e1e7;
+$white:#ffffff;
+$blue:#010138;
+$black:#000000;
+$colorletra:#131212;
+$blackclaro:#2927277a;
+// colores de redes
+$instagram:#e0556c;
+$whapp:#00bb2d;
+$twitter:#00acee;
+$youtube:#ff0000;
+$linkedin:#0e76a8;
+
+
+// estilos de letras
+$letra: 'PT Sans Narrow', sans-serif;
+$letra-subtitulo:'PT Sans Narrow', sans-serif;
+
+// mixin
+@mixin border {
+    border-radius:20px;
+    border: 2px solid $aqua;
+    margin: 20px;
+    
+}
+@mixin titulos {
+    background-color: $aqua;
+    font-family: $letra;
+    margin: 0;
+    padding: 17px;
+    border-bottom: 1px solid $blue;
+    text-align: center;
+}
+@mixin subtitulos {
+    text-align: center;
+    font-family: $letra-subtitulo;  
+}

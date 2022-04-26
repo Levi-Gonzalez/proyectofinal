@@ -1,0 +1,228 @@
+main{ 
+    
+    h1{
+       @include titulos;
+       text-transform: uppercase;
+   }
+   .etiquetas{
+       text-align: center;
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 2px;
+       font-family: $letra;
+   }
+     .contenido{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 450px;
+        gap: 25px;
+        padding: 10px;
+    }
+
+    .imagen {
+        width: 100%;
+        height: 65%;
+        object-fit: cover;
+        border-radius: 30px;
+        border:solid 2px $aqua;
+    }
+
+   .caja {
+       &:hover{
+           transform:scale(102%);
+           transition: 0.25s; 
+           
+       }
+   }
+   p{
+
+       text-align: center;
+       font-size: 15px;
+       font-family: Arial, Helvetica, sans-serif;
+
+   }
+   .s-subtitulo{
+       @include subtitulos;
+       margin: 3rem;
+
+   }
+   .tsubt{
+       @include subtitulos;
+       margin: 6rem auto;
+       background-color: $aqua;
+       border: solid 1px $black;
+       margin-bottom:20px;
+       padding: 10px;
+   }
+   // -----------------------------------------------------------------
+   // secciones
+   .secciones{
+       display:grid;
+       grid-template-columns: 1fr; 
+       grid-template-rows: 1fr 1fr 1fr; 
+      
+       // imagenes generales editadas
+
+       img{
+       @include border;
+       width: 400px;
+       margin-right: 40px;
+       }
+   
+        // 1er seccion index
+    .seccion-trabajos{    
+         margin-bottom: 30px;
+
+       h3{
+           @include subtitulos;
+           text-align: center;
+       }
+       p{  
+           margin-left: 20px;           
+           font-size: 17px;
+           text-align: start;            
+       }
+       img{
+        margin-top: 40px;
+       float: left;
+       margin-left: 30px;
+
+       }
+     }
+       // 2do seccion index
+    .seccion-estudios{       
+       h3{
+       @include subtitulos;
+           
+       }
+       p{
+       font-size: 17px;
+       text-align:start;
+       margin-left: 20px;
+       }
+       img{
+       margin-top: 20px;
+       margin-left: 30px;
+       float: right;
+       
+       }
+
+   }
+   // 3er seccion index
+    .seccion-arte{    
+     h3{
+         @include subtitulos;
+         text-align: center;
+     }
+     p{  
+        margin-left: 20px;           
+        font-size: 17px;
+        text-align: start;            
+     }
+     img{
+       float: left;
+        margin-left: 30px;
+       height: 280px;
+     }
+   }
+ }
+//   cierre de secciones 
+//   ------------------------
+// Nosotros
+   .nosotros{
+          
+       .bienvenido{
+           @include subtitulos;
+           padding: 1rem;
+           font-size: 40px;
+           text-align: start;
+       }
+       h4{
+           @include subtitulos;
+           text-align: center;
+           font-size: 2rem;
+       }
+       .texto{
+       padding:3rem;
+       text-align: center;
+       padding: rem;
+       font-size: 20px;
+       text-align:center;
+       
+       }
+       a{
+           color: rgb(1, 104, 169);
+
+           &:hover{
+               color: rgb(110, 110, 3);
+           }   
+       }
+
+   }
+
+   // --------------------
+   // media queries
+   @media screen and (max-width: 300px) {
+       .contenido{ 
+           grid-template-columns: 1fr;
+           padding: 4px;
+           
+       
+       }
+
+       .secciones p{
+           margin-left: 20px;
+       }
+       .secciones img{
+           width: 100%;
+       }
+       
+   }
+   
+   @media screen and (max-width: 800px) {
+       
+       .contenido{
+           grid-auto-columns: 1fr; 
+           grid-auto-rows: 1fr; 
+           grid-template-columns: 1fr 1fr; 
+           grid-template-rows: 1fr 1fr 1fr; 
+           gap: 0NaNpx 0px; 
+       }
+       
+       
+   }
+   
+   @media screen and (max-width: 610px) {
+       .contenido{
+           grid-template-columns: 1fr ;    
+           padding: 30px;
+           img{
+               margin: 0;
+               gap:0px;
+           }
+           p{
+               margin: 0;
+               padding: 0;
+           }
+       }
+       .secciones {
+           img{
+               width: 410px;
+           }
+           p{
+               text-align: center;
+           }
+       }
+       .seccion-trabajos{
+           display: flex;
+           flex-direction: column;
+       }
+       .seccion-estudios{
+           display: flex;
+           flex-direction: column;
+       }
+       .seccion-arte{
+           display: flex;
+           flex-direction: column;
+       }
+   }
+}

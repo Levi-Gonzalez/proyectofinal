@@ -1,0 +1,55 @@
+footer{
+    margin: 0;
+    color: white;
+    background-color: $colorletra;
+    padding: 1rem; 
+    text-align: center;
+
+    .redes{
+    display: flex;
+    justify-content:space-evenly;   
+    font-size: 35px;    
+    }
+    li{
+        list-style: none;
+    }
+    a{  color:$white;
+        text-decoration: none;    
+    }
+ 
+     .instagram{
+         &:hover{
+            color:$instagram;
+         }
+     }
+    .whatsapp{
+        &:hover{
+            color: $whapp;
+        }
+    }
+    .twitter{
+        &:hover{
+            color: $twitter;
+        }
+    }
+    .youtube{
+        &:hover{
+            color: $youtube;
+        }
+    }
+
+    .linkedin{
+        &:hover{
+            color:$linkedin
+        }
+    }
+    .firma{
+        font-size: 25px;
+
+        &:hover{
+            text-decoration:underline;
+            color: $aqua;
+        }
+    }
+
+}

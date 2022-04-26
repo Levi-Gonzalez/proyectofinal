@@ -1,0 +1,316 @@
+.logo {
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+main h1 {
+  background-color: #12d0d0;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0;
+  padding: 17px;
+  border-bottom: 1px solid #010138;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+main .etiquetas {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2px;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+main .contenido {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 450px;
+  gap: 25px;
+  padding: 10px;
+}
+
+main .imagen {
+  width: 100%;
+  height: 65%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 30px;
+  border: solid 2px #12d0d0;
+}
+
+main .caja:hover {
+  -webkit-transform: scale(102%);
+          transform: scale(102%);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+main p {
+  text-align: center;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main .s-subtitulo {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 3rem;
+}
+
+main .tsubt {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 6rem auto;
+  background-color: #12d0d0;
+  border: solid 1px #000000;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+main .secciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+}
+
+main .secciones img {
+  border-radius: 20px;
+  border: 2px solid #12d0d0;
+  margin: 20px;
+  width: 400px;
+  margin-right: 40px;
+}
+
+main .secciones .seccion-trabajos {
+  margin-bottom: 30px;
+}
+
+main .secciones .seccion-trabajos h3 {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+}
+
+main .secciones .seccion-trabajos p {
+  margin-left: 20px;
+  font-size: 17px;
+  text-align: start;
+}
+
+main .secciones .seccion-trabajos img {
+  margin-top: 40px;
+  float: left;
+  margin-left: 30px;
+}
+
+main .secciones .seccion-estudios h3 {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+main .secciones .seccion-estudios p {
+  font-size: 17px;
+  text-align: start;
+  margin-left: 20px;
+}
+
+main .secciones .seccion-estudios img {
+  margin-top: 20px;
+  margin-left: 30px;
+  float: right;
+}
+
+main .secciones .seccion-arte h3 {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+}
+
+main .secciones .seccion-arte p {
+  margin-left: 20px;
+  font-size: 17px;
+  text-align: start;
+}
+
+main .secciones .seccion-arte img {
+  float: left;
+  margin-left: 30px;
+  height: 280px;
+}
+
+main .nosotros .bienvenido {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  padding: 1rem;
+  font-size: 40px;
+  text-align: start;
+}
+
+main .nosotros h4 {
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-align: center;
+  font-size: 2rem;
+}
+
+main .nosotros .texto {
+  padding: 3rem;
+  text-align: center;
+  padding: rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+main .nosotros a {
+  color: #0168a9;
+}
+
+main .nosotros a:hover {
+  color: #6e6e03;
+}
+
+@media screen and (max-width: 300px) {
+  main .contenido {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 4px;
+  }
+  main .secciones p {
+    margin-left: 20px;
+  }
+  main .secciones img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main .contenido {
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    gap: 0NaNpx 0px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  main .contenido {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  main .contenido img {
+    margin: 0;
+    gap: 0px;
+  }
+  main .contenido p {
+    margin: 0;
+    padding: 0;
+  }
+  main .secciones img {
+    width: 410px;
+  }
+  main .secciones p {
+    text-align: center;
+  }
+  main .seccion-trabajos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .seccion-estudios {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .seccion-arte {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer {
+  margin: 0;
+  color: white;
+  background-color: #131212;
+  padding: 1rem;
+  text-align: center;
+}
+
+footer .redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 35px;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer .instagram:hover {
+  color: #e0556c;
+}
+
+footer .whatsapp:hover {
+  color: #00bb2d;
+}
+
+footer .twitter:hover {
+  color: #00acee;
+}
+
+footer .youtube:hover {
+  color: #ff0000;
+}
+
+footer .linkedin:hover {
+  color: #0e76a8;
+}
+
+footer .firma {
+  font-size: 25px;
+}
+
+footer .firma:hover {
+  text-decoration: underline;
+  color: #12d0d0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+/*# sourceMappingURL=estilo.css.map */
